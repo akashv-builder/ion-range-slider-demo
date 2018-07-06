@@ -1,0 +1,30 @@
+<ion-range-slider #sliderElement
+          type="double"
+          [min]="0"
+          max="100" 
+          from="28"
+          from_min="0"
+          from_max="100"
+          from_shadow="true"
+          to="40"
+          to_min="40"
+          to_max="100"
+          to_shadow="true"
+          grid="true"
+          grid_num="20"
+          prefix="Weight: "
+          postfix=" million pounds"
+          decorate_both="false"
+          (onFinish)="myOnFinish($event)"></ion-range-slider>
+
+
+          <!--(onUpdate)="myOnUpdate($event)"
+          (onChange)="myOnChange($event)" 
+            [min] used to set the value to start in slider
+            max used to specify max value in slider
+            from used to specify from where point of left slider should be placed by default
+            to used to specify from where point of right slider should be placed by default
+            from min and max specify where can the left point can go to
+            to min and max specify where can the right point can go to
+            grid and number is used to show the scale..number specify in how many parts you want to divide
+        -->
